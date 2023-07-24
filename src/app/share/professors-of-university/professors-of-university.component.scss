@@ -1,0 +1,33 @@
+// justify-content: center;
+mat-card {
+    width: 100%;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #2c1d6614;
+    border-radius: 16px;
+    opacity: 1;
+    height: 455px;
+
+    mat-tab-group {
+        overflow: auto;
+    }
+}
+
+.mdc-tab {
+    min-width: 112px;
+    padding-right: 36px;
+    padding-left: 36px;
+    display: flex;
+    flex: 1 0 auto;
+    justify-content: center;
+    box-sizing: border-box;
+    margin: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    border: none;
+    outline: none;
+    text-align: center;
+    white-space: nowrap;
+    cursor: pointer;
+    -webkit-appearance: none;
+    z-index: 1;
+}

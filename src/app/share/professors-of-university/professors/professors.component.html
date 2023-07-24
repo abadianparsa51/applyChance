@@ -1,0 +1,22 @@
+<mat-list role="list" *ngIf="professors?.data">
+    <mat-list-item role="listitem" *ngFor="let professor of professors?.data">
+        <div class="alignment-stuff ">
+            <!-- profile image and title -->
+            <div class="profile " style="flex-grow: 3;">
+                <img class="profile-image" [src]="professor?.avatar" alt="profile image">
+
+                <p style="font-size: 14px;">{{professor.name}}</p>
+                <p>{{professor.departmentName}}</p>
+            </div>
+            <!-- end of profile image and title -->
+
+        </div>
+
+    </mat-list-item>
+
+</mat-list>
+<!--  -->
+
+<div *ngIf="!professors?.data" class="spinner-alignment">
+    <mat-spinner></mat-spinner>
+</div>

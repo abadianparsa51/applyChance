@@ -1,0 +1,48 @@
+<div class="wrapp">
+    <mat-card>
+        <mat-tab-group mat-stretch-tabs="false" mat-align-tabs="start">
+            <mat-tab class="mdc-tab ">
+                <ng-template mat-tab-label>
+                    <div (click)="selectTab('Position')">Positions</div>
+                </ng-template>
+                <positions *ngIf="this.positionData" [position]="this.positionData"></positions>
+                <div class="spinner-alignment" *ngIf="!this.positionData">
+                    <mat-spinner></mat-spinner>
+                </div>
+            </mat-tab>
+            <mat-tab label="Requirements">
+                <ng-template mat-tab-label>
+                    <div>Requirements</div>
+                </ng-template>
+                <requirements></requirements>
+            </mat-tab>
+            <mat-tab label="Professors">
+                <ng-template mat-tab-label>
+                    <div (click)="selectUser('professor')">Professor</div>
+                </ng-template>
+                <professors *ngIf="this.professorData" [professors]="this.professorData"></professors>
+                <div class="spinner-alignment" *ngIf="!this.professorData">
+                    <mat-spinner></mat-spinner>
+                </div>
+            </mat-tab>
+            <mat-tab label="Mentors">
+                <ng-template mat-tab-label>
+                    <div (click)="selectUser('mentor')">Mentors</div>
+                </ng-template>
+                <mentors *ngIf="this.mentorsData" [mentors]="this.mentorsData"></mentors>
+                <div class="spinner-alignment" *ngIf="!this.mentorsData">
+                    <mat-spinner></mat-spinner>
+                </div>
+            </mat-tab>
+            <mat-tab label="Students">
+                <ng-template mat-tab-label>
+                    <div (click)="selectUser('applicant')">Students</div>
+                </ng-template>
+                <students *ngIf="this.applicantData" [data]="this.applicantData.data"></students>
+                <div class="spinner-alignment" *ngIf="!this.applicantData">
+                    <mat-spinner></mat-spinner>
+                </div>
+            </mat-tab>
+        </mat-tab-group>
+    </mat-card>
+</div>

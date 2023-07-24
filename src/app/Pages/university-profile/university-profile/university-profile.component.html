@@ -1,0 +1,22 @@
+<div *ngIf="!isNavigationInProgress">
+    <div class="">
+        <show-boxing [universityData]="universityData"></show-boxing>
+    </div>
+    <div class="">
+        <find-in-location></find-in-location>
+
+    </div>
+
+    <div class="" style="margin-top: 1rem;">
+        <professors-of-university></professors-of-university>
+    </div>
+
+    <div class="" style="margin-top: 1rem;">
+        <information></information>
+    </div>
+
+</div>
+
+<div class="spinner-alignment" *ngIf="isNavigationInProgress">
+    <mat-spinner></mat-spinner>
+</div>

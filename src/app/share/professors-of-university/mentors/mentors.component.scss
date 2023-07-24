@@ -1,0 +1,45 @@
+mat-list-item {
+    .alignment-stuff {
+        margin-bottom: 0 !important;
+    }
+
+    span {
+        font-size: 14px;
+    }
+}
+
+.block {
+    display: block;
+    width: 90%;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    width: 50%;
+
+    p {
+        font-size: 14px;
+        // width: 50px;
+        inline-size: 300px;
+
+        overflow: hidden;
+        margin: 0 !important;
+    }
+
+    .profile-image {
+        width: 40px;
+        height: 40px;
+        margin-right: 5px;
+        border-radius: 50%;
+    }
+}
+
+button {
+    background-color: #a35bff !important;
+    border-radius: 6px;
+
+    label {
+        color: white;
+    }
+}

@@ -1,0 +1,21 @@
+<mat-toolbar>
+    <div class="left-side">
+        <img class="logo" src="assets/IMG/Group_3033@2x.png">
+        <span class="example-spacer"></span>
+        <button mat-button *ngFor="let option of menuOptions">
+            {{option.name}}
+        </button>
+    </div>
+    <div class="right-side">
+        <form class="search-form">
+            <div>
+                <mat-icon class="search-icon">search</mat-icon>
+                <input type="text" class="searchInput" placeholder="search in applychance">
+            </div>
+        </form>
+        <button mat-stroked-button color="primary" style="border-radius: 25px;">Upgrade</button>
+        <mat-icon matBadge="15" matBadgeColor="warn" matBadgeSize="small"
+            class="notifications-icon">notifications</mat-icon>
+        <img class="profile-image" src="assets/IMG/Avatar.png" alt="profile image">
+    </div>
+</mat-toolbar>

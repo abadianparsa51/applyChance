@@ -1,0 +1,63 @@
+mat-card {
+    // width: 650px;
+    background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #2c1d6614;
+    border-radius: 16px;
+    opacity: 1;
+
+    mat-card-header {
+        height: 180px;
+        background-image: url("../../../assets/IMG/okanagan_campus_1920x700@2x.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 16px 16px 0 0;
+    }
+
+    mat-card-content {
+        margin-top: -4.5rem;
+        padding: 0 25px !important;
+    }
+
+    .alignment-stuff {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 25px;
+
+        button {
+            background-color: #fff !important;
+            position: absolute;
+            right: 10px;
+            top: 160px;
+        }
+    }
+
+    .university-logo {
+        max-width: 140px;
+        height: 140px;
+        border: solid 5px #fff;
+        border-radius: 50%;
+        box-shadow: 0px 15px 10px -3px rgba(0, 0, 0, 0.1);
+    }
+}
+
+.content-divider {
+    max-width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+
+    p {
+        margin: 0 !important;
+    }
+
+    .icon {
+        max-width: 10%;
+    }
+
+    .content {
+        max-width: 90%;
+        margin: 0 0 20px 15px !important;
+    }
+}

@@ -1,0 +1,19 @@
+.wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    mat-card {
+        width: 500px;
+
+        mat-card-header {
+            margin-bottom: 20px;
+        }
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+}

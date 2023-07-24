@@ -1,0 +1,12 @@
+<mat-progress-bar id="navigation-loading" mode="indeterminate" *ngIf="isNavigationInProgress" mode="indeterminate">
+</mat-progress-bar>
+<div class="{{cssClass}}" matBadgeColor="warn" matBadgeSize="small" (click)="expanded()">
+    <div class="close" [hidden]="!expand">
+        <div class="relative">
+            <mat-icon class="iconposition">close</mat-icon>
+        </div>
+    </div>
+    <img src="../assets/IMG/Group70408.svg" alt="" class="icon-position">
+    <small [hidden]="!expand">Contact Us to Get Better Understanding of Your Score!</small>
+</div>
+<router-outlet></router-outlet>

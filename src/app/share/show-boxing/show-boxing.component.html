@@ -1,0 +1,43 @@
+<mat-card class="example-card" *ngIf="universityData">
+    <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+    </mat-card-header>
+    <mat-card-content>
+        <div class="alignment-stuff">
+            <div>
+                <img class="university-logo" mat-card-image src="{{universityData.cover}}" alt="Logo of university">
+            </div>
+            <button mat-mini-fab color="accent" aria-label="Share button">
+                <img class="sideBarlogo" src="assets/IMG/Button.svg">
+            </button>
+        </div>
+
+        <h1><b>{{universityData.name}}</b></h1>
+        <div class="content-divider">
+            <img class="sideBarlogo" src="assets/IMG/MaskGroup146.svg">
+
+            <p class="content">{{universityData.rank}}</p>
+        </div>
+
+        <div class="content-divider" *ngIf="universityData?.summeries">
+
+            <img class="sideBarlogo" src="assets/IMG/MaskGroup96.svg">
+            <p>
+                {{universityData.summeries}}
+
+            </p>
+
+        </div>
+
+        <div class="content-divider">
+            <img class="sideBarlogo" src="assets/IMG/MaskGroup97.svg">
+            <p class="content">{{universityData.country?.name}}</p>
+        </div>
+
+        <div class="content-divider">
+            <img class="sideBarlogo" src="assets/IMG/MaskGroup147.svg">
+            <a class="content" href="universityData?.country?.name">{{universityData.link}}</a>
+        </div>
+
+    </mat-card-content>
+</mat-card>

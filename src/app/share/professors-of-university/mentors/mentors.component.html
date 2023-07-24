@@ -1,0 +1,27 @@
+<mat-list role="list" *ngIf="mentors">
+    <mat-list-item role="listitem" *ngFor="let mentor of mentors.data">
+        <div class="alignment-stuff ">
+            <!-- profile image and title -->
+            <div class="profile " style="flex-grow: 3;">
+                <img class="profile-image" [src]="mentor?.avatar" alt="profile image">
+
+                <p style="font-size: 14px;">{{mentor.name}}</p>
+            </div>
+            <!-- end of profile image and title -->
+
+            <!-- detail button -->
+            <div class="col-2 text-center">
+                <button mat-button>follow
+                </button>
+            </div>
+            <!-- detail button -->
+        </div>
+
+    </mat-list-item>
+
+</mat-list>
+<!--  -->
+
+<div *ngIf="!mentors" class="spinner-alignment">
+    <mat-spinner></mat-spinner>
+</div>

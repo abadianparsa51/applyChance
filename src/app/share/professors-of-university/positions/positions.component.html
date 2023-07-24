@@ -1,0 +1,28 @@
+<mat-list role="list">
+    <mat-list-item role="listitem" *ngFor="let professor of position?.data">
+        <div class="alignment-stuff ">
+            <!-- profile image and title -->
+            <div class="profile " style="flex-grow: 3;">
+                <img class="profile-image" [src]="professor.profile?.avatar" alt="profile image">
+
+                <p style="font-size: 14px;">{{professor.title}}</p>
+            </div>
+            <!-- end of profile image and title -->
+            <!-- name -->
+            <div class="text-center " style="flex-grow: 3;">
+                <p style="font-size: 13px; margin-top: 1rem;">{{professor.profile?.name}}</p>
+            </div>
+            <!-- end of name -->
+            <!-- detail button -->
+            <div class="col-2 text-center">
+                <button mat-button>
+                    <label style="display: block; font-size: 12px;">
+                        Details
+                    </label></button>
+            </div>
+            <!-- detail button -->
+        </div>
+
+    </mat-list-item>
+
+</mat-list>

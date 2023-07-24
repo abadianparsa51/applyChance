@@ -1,0 +1,61 @@
+<div class="row mt5">
+    <div class="col-md-6 mt5">
+        <mat-card class="card-hint">
+
+            <mat-card-content>
+                <p class="white">
+                    What's <span class="yellow"> Your Chance </span> of being accepted to this university?
+                </p>
+                <div class="row" [hidden]="!hide">
+                    <div class="col-md-6">
+                        <button mat-raised-button>
+                            <label class="chanceLabel">
+                                <b>
+                                    70%
+                                </b>
+                            </label>
+                            <label class="selfFound">
+                                self found
+                            </label>
+                        </button>
+                    </div>
+                    <div class="col-md-6">
+                        <button mat-raised-button>
+                            <label class="chanceLabel">
+                                <b>
+                                    60%
+                                </b>
+                            </label>
+                            <label class="selfFound">
+                                founded
+                            </label>
+                        </button>
+                    </div>
+                </div>
+                <div class="row login" [hidden]="hide">
+                    <div class="btnPosition">
+                        <button class="loginBtn" mat-raised-button (click)="goToLogin()">Login to see</button>
+                    </div>
+                </div>
+            </mat-card-content>
+
+        </mat-card>
+    </div>
+    <div class="col-md-6 mt5">
+        <mat-card>
+
+            <mat-card-content>
+                <p>
+                    The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+                    A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
+                    bred for hunting.
+                </p>
+            </mat-card-content>
+
+        </mat-card>
+
+    </div>
+    <!-- region map-->
+
+    <!-- end of region map -->
+</div>

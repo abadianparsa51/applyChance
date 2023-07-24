@@ -1,0 +1,127 @@
+.mt5 {
+    margin-top: 5px;
+}
+
+.mt10 {
+    margin-top: 10px;
+}
+
+.mt15 {
+    margin-top: 15px;
+}
+
+.mt20 {
+    margin-top: 20px;
+}
+
+.mb5 {
+    margin-bottom: 5px;
+}
+
+.mb10 {
+    margin-bottom: 10px;
+}
+
+.mb15 {
+    margin-bottom: 15px;
+}
+
+.mb20 {
+    margin-bottom: 20px;
+}
+
+.mb60 {
+    margin-bottom: 60px;
+}
+
+.close {
+    position: absolute;
+    right: 15px;
+    top: -12px;
+    background-color: #e5e3ee;
+    border-radius: 50px;
+}
+
+.relative {
+    position: relative;
+}
+
+.iconposition {
+    padding: 3px;
+    position: absolute;
+    top: 0px;
+    right: 9px;
+    font-size: 14px;
+    width: 20px;
+    height: 20px;
+    background-color: #dedede;
+    border-radius: 48px;
+    color: #cacaca;
+}
+
+button {
+    height: 45px;
+    width: 45px;
+}
+
+.rocketImg {
+    width: 35px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.mdc-tab {
+    min-width: 112px;
+    padding-right: 36px;
+    padding-left: 36px;
+    display: flex;
+    flex: 1 0 auto;
+    justify-content: center;
+    box-sizing: border-box;
+    margin: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    border: none;
+    outline: none;
+    text-align: center;
+    white-space: nowrap;
+    cursor: pointer;
+    -webkit-appearance: none;
+    z-index: 1;
+}
+
+.float-btn {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: fixed;
+    min-width: 400px;
+    max-width: 533px;
+    height: 67px;
+    bottom: 70px;
+    left: 50px;
+    background: transparent linear-gradient(359deg, #ffffff 0%, #f7f6fb 100%) 0 0 no-repeat;
+    border: 1px solid #e5e3ee;
+    border-radius: 34px;
+    cursor: pointer;
+    padding: 0.5rem 0.7rem;
+    z-index: 2;
+    transition:
+        max-width 0.5s,
+        min-width 0.5s;
+    img {
+        position: fixed;
+    }
+    small {
+        margin-left: 50px;
+    }
+}
+
+.expanded {
+    min-width: 67px;
+    max-width: 67px;
+    padding: 0.5rem 0.7rem;
+    transition:
+        max-width 0.5s,
+        min-width 0.5s;
+}

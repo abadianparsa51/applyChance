@@ -1,0 +1,183 @@
+.mt-4 {
+    margin-top: -4px;
+}
+
+.mt5 {
+    margin-top: 5px;
+}
+
+.mt10 {
+    margin-top: 10px;
+}
+
+.mt15 {
+    margin-top: 15px;
+}
+
+.mt20 {
+    margin-top: 20px;
+}
+
+.mt12 {
+    margin-top: 12px !important;
+}
+
+.mb5 {
+    margin-bottom: 5px;
+}
+
+.mb10 {
+    margin-bottom: 10px;
+}
+
+.mb15 {
+    margin-bottom: 15px;
+}
+
+.mb20 {
+    margin-bottom: 20px;
+}
+
+.mb60 {
+    margin-bottom: 60px;
+}
+
+.mr10 {
+    margin-right: 10px;
+}
+
+.mr15 {
+    margin-right: 15px;
+}
+
+.ml15 {
+    margin-left: 15px;
+}
+
+.ml20 {
+    margin-left: 20px;
+}
+
+
+.p5 {
+    padding: 5px;
+}
+
+.pl5 {
+    padding-left: 5px;
+}
+
+.mr0 {
+    margin-right: 0px !important;
+}
+
+.ml0 {
+    margin-left: 0px !important;
+}
+
+mat-card {
+    width: 500px !important;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #2c1d6614;
+    border-radius: 16px;
+    opacity: 1;
+    height: 700px;
+
+    mat-tab-group {
+        overflow: auto;
+    }
+}
+
+.close-icon {
+    color: white
+}
+
+.close-btn {
+    background-color: transparent;
+    border-radius: 50px;
+    border: 1px solid white;
+}
+
+mat-card-header {}
+
+h3 {
+    color: #ffffff;
+}
+
+label {
+    color: white;
+}
+
+.header {
+    height: 150px !important;
+    background-color: #A35BFF !important;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.yellow {
+    text-decoration: none;
+    color: #F9A825 !important;
+}
+
+.spanPosition {
+    position: absolute;
+    left: 40px;
+    color: rgb(112, 112, 112);
+}
+
+// mat-icon {
+//     font-size: 14px;
+//     margin-top: 3px;
+// }
+
+.box {
+    border: 1px solid silver !important;
+    margin: 10px !important;
+    border-radius: 20px !important;
+    height: 95px !important;
+    position: relative;
+
+}
+
+.silver-box {
+    background-color: rgb(231, 231, 231);
+    height: 120px;
+
+    span {
+        color: #2C1D66;
+    }
+}
+
+.purple-box {
+    background-color: #442B62;
+    height: 45px;
+    border-radius: 5px;
+
+    .yellow-icon {
+        color: #F9A825;
+        display: block;
+        font-size: 16px;
+
+        span {
+            display: block;
+            color: white;
+            margin-top: 10px;
+            margin-left: -15px
+        }
+    }
+}
+
+.colorSilver {
+    color: rgb(112, 112, 112);
+    font-size: 14px;
+    display: block;
+    margin-left: 4px;
+}
+
+
+span {
+    color: #2C1D66;
+    font-size: 15px;
+
+}

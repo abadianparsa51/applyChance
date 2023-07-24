@@ -1,0 +1,26 @@
+<mat-list role="list" *ngIf="data">
+    <mat-list-item role="listitem" *ngFor="let applicant of data">
+        <div class="alignment-stuff ">
+            <!-- profile image and title -->
+            <div class="profile " style="flex-grow: 3;">
+                <img class="profile-image" [src]="applicant?.avatar" alt="profile image">
+
+                <p style="font-size: 14px;">{{applicant.name}}</p>
+            </div>
+            <!-- end of profile image and title -->
+
+            <!-- detail button -->
+            <div class="col-2 text-center">
+                <button class="colorwhite" mat-button>follow
+                </button>
+            </div>
+            <!-- detail button -->
+        </div>
+
+    </mat-list-item>
+
+</mat-list>
+
+<div class="spinner-alignment" *ngIf="!data">
+    <mat-spinner></mat-spinner>
+</div>
